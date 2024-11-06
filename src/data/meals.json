@@ -1,0 +1,84 @@
+{
+  "breakfasts": [
+    {
+      "name": "Омлет с овощами",
+      "ingredients": [
+        "3 яйца",
+        "50 г молока",
+        "1 помидор",
+        "1/2 сладкого перца",
+        "соль",
+        "перец",
+        "зелень по вкусу"
+      ],
+      "image": "https://images.gastronom.ru/HGWEXxM5PcNnoMdU5TdvCHfTsApQ7XJflntpnlJBTwU/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzY3YzMyNjNlLTRiYzItNDcyNC1iYTkwLTdmOTY3NmI1YjRhNy5qcGc.webp"
+    },
+    {
+      "name": "Блинчики с медом",
+      "ingredients": [
+        "1 стакан муки",
+        "1 стакан молока",
+        "1 яйцо",
+        "1 ст.л. сахара",
+        "щепотка соли",
+        "мед по вкусу"
+      ],
+      "image": "https://mama-lena.ru/wp-content/uploads/2020/05/bliny-s-medom.jpg"
+    }
+  ],
+  "lunches": [
+    {
+      "name": "Куриный суп с лапшой",
+      "ingredients": [
+        "300 г куриного филе",
+        "1 морковь",
+        "1 луковица",
+        "100 г лапши",
+        "соль",
+        "перец",
+        "зелень"
+      ],
+      "image": "https://art-lunch.ru/content/uploads/2014/02/chicken-soup-001.jpg"
+    },
+    {
+      "name": "Салат Цезарь",
+      "ingredients": [
+        "100 г куриного филе",
+        "50 г салата Ромэн",
+        "1 помидор",
+        "50 г пармезана",
+        "гренки",
+        "соус Цезарь"
+      ],
+      "image": "https://images.gastronom.ru/-UHzDgNx-m0MMa6OR0ilz2qP7MB0mKQeGceObc9jpck/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzVhNzFhZGY1LTM3MTYtNDlmMy04NDNlLTAwMTg4MGNiM2E0OS5qcGc.webp"
+    }
+  ],
+  "dinners": [
+    {
+      "name": "Стейк с овощами",
+      "ingredients": [
+        "200 г говяжьего стейка",
+        "1 болгарский перец",
+        "1 цукини",
+        "1 ст.л. оливкового масла",
+        "соль",
+        "перец"
+      ],
+      "image": "https://steakandgrill.ru/wp-content/uploads/2020/03/1-stejk-s-ovoshami-na-doske-1024x684.jpg"
+    },
+    {
+      "name": "Паста с морепродуктами",
+      "ingredients": [
+        "150 г пасты",
+        "100 г креветок",
+        "100 г мидий",
+        "2 зубчика чеснока",
+        "1 помидор",
+        "оливковое масло",
+        "соль",
+        "перец"
+      ],
+      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
+    }
+  ]
+}
