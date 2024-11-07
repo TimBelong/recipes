@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import mealsData from '../data/meals.json';
-import MealBlock from "./MealBlock";
 import MealItem from "./MealItem";
+import MyButton from "../UI/MyButton";
 
 
-const Meals = () => {
+const Meals = ({mealsData}) => {
 	const [randomMeals, setRandomMeals] = useState(null);
 	const getRandomMeals = () => {
 		const getRandomMeal = (meals) => meals[Math.floor(Math.random() * meals.length)];
@@ -20,13 +19,9 @@ const Meals = () => {
 		});
 	}
 	return (
-		<div className="px-4 md:px-16 lg:px-32 xl:px-80 py-8">
-			<button
-				onClick={getRandomMeals}
-				className="mb-8 px-4 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-600"
-			>
-				Что я сегодня ем?
-			</button>
+		<div className="py-8">
+			<MyButton text="Что я сегодня ем?" onClick={getRandomMeals} />
+
 			{randomMeals && (
 				<div className="mb-8">
 					<h2 className="text-2xl font-bold mb-4">Ваши блюда на сегодня</h2>
