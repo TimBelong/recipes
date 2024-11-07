@@ -1,56 +1,95 @@
 {
   "breakfasts": [
     {
-      "name": "Омлет с овощами",
+      "name": "Омлет c сыром",
       "ingredients": [
         "3 яйца",
-        "50 г молока",
-        "1 помидор",
-        "1/2 сладкого перца",
-        "соль",
-        "перец",
+        "50 мл молока",
+        "Сыр",
         "зелень по вкусу"
       ],
-      "image": "https://images.gastronom.ru/HGWEXxM5PcNnoMdU5TdvCHfTsApQ7XJflntpnlJBTwU/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzY3YzMyNjNlLTRiYzItNDcyNC1iYTkwLTdmOTY3NmI1YjRhNy5qcGc.webp"
+      "image": "https://img1.russianfood.com/dycontent/images_upl/437/big_436562.jpg"
     },
     {
-      "name": "Блинчики с медом",
+      "name": "Овсянная каша с бананом",
       "ingredients": [
-        "1 стакан муки",
+        "1/2 стакана каши",
         "1 стакан молока",
-        "1 яйцо",
         "1 ст.л. сахара",
-        "щепотка соли",
-        "мед по вкусу"
+        "Растительное масло",
+        "1 банан",
+        "Голубика"
       ],
-      "image": "https://mama-lena.ru/wp-content/uploads/2020/05/bliny-s-medom.jpg"
+      "image": "https://img1.russianfood.com/dycontent/images_upl/342/big_341098.jpg"
+    },
+    {
+      "name": "Яичница глазунья",
+      "ingredients": [
+        "3 яйца",
+        "зелень по вкусу",
+        "овощи"
+      ],
+      "image": "https://static.1000.menu/img/content-v2/a9/dd/52657/yaichnica-glazunya_1611857412_7_max.jpg"
+    },
+    {
+      "name": "Брускетта с авакадо и тунцом",
+      "ingredients": [
+        "хлеб",
+        "2 яица",
+        "авокадо",
+        "тунец консервированный"
+      ],
+      "image": "https://img.iamcook.ru/2018/upl/recipes/cat/u-e13c5f9495ff4f350221ccb7b2077475.jpg"
     }
   ],
   "lunches": [
     {
-      "name": "Куриный суп с лапшой",
+      "name": "Карбонара",
       "ingredients": [
-        "300 г куриного филе",
-        "1 морковь",
-        "1 луковица",
-        "100 г лапши",
-        "соль",
-        "перец",
-        "зелень"
+        "500 г бекона",
+        "4 яица",
+        "Спагетти",
+        "Пармезан",
+        "Оливковое масло"
       ],
-      "image": "https://art-lunch.ru/content/uploads/2014/02/chicken-soup-001.jpg"
+      "image": "https://opis-cdn.tinkoffjournal.ru/mercury/carbonara-19.mvotyhplpagn..jpg"
     },
     {
-      "name": "Салат Цезарь",
+      "name": "Кёфтэ",
       "ingredients": [
-        "100 г куриного филе",
-        "50 г салата Ромэн",
+        "500 г говяжего фарша",
+        "300 г картошки",
         "1 помидор",
-        "50 г пармезана",
-        "гренки",
-        "соус Цезарь"
+        "1 красный перец",
+        "чеснок",
+        "томатная паста",
+        "оливковое масло"
       ],
-      "image": "https://images.gastronom.ru/-UHzDgNx-m0MMa6OR0ilz2qP7MB0mKQeGceObc9jpck/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzVhNzFhZGY1LTM3MTYtNDlmMy04NDNlLTAwMTg4MGNiM2E0OS5qcGc.webp"
+      "image": "https://i.ytimg.com/vi/S6flxGP9DyY/maxresdefault.jpg"
+    },
+    {
+      "name": "Паста с морепродуктами",
+      "ingredients": [
+        "150 г пасты",
+        "100 г креветок",
+        "100 г мидий",
+        "2 зубчика чеснока",
+        "1 помидор",
+        "оливковое масло"
+      ],
+      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
+    },
+    {
+      "name": "Курица в сливках",
+      "ingredients": [
+        "500 г куринного филе",
+        "лук",
+        "сливки",
+        "2 зубчика чеснока",
+        "оливковое масло",
+        "зелень"
+      ],
+      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
     }
   ],
   "dinners": [
@@ -65,20 +104,6 @@
         "перец"
       ],
       "image": "https://steakandgrill.ru/wp-content/uploads/2020/03/1-stejk-s-ovoshami-na-doske-1024x684.jpg"
-    },
-    {
-      "name": "Паста с морепродуктами",
-      "ingredients": [
-        "150 г пасты",
-        "100 г креветок",
-        "100 г мидий",
-        "2 зубчика чеснока",
-        "1 помидор",
-        "оливковое масло",
-        "соль",
-        "перец"
-      ],
-      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
     }
   ]
 }
