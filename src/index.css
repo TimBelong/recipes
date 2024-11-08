@@ -20,7 +20,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .header_logo{
   width: 70px;
 }
@@ -43,4 +42,8 @@ code {
 
 .nav li:hover::before{
   width: 100%;
+}
+
+.search svg path{
+  fill: black;
 }

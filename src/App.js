@@ -3,11 +3,13 @@ import Header from "./Components/Header";
 import Meals from "./Components/Meals";
 import mealsData from './data/meals.json';
 import RecipeFinder from "./Components/RecipeFinder";
+import SearchByName from "./Components/SearchByName";
 
 function App() {
   return (
-    <div className="App px-4 md:px-16 lg:px-32 xl:px-80 py-5">
+    <div className="App">
       <Header />
+      <SearchByName mealsData={mealsData} />
       <Meals mealsData={mealsData} />
       <RecipeFinder mealsData={mealsData} />
     </div>

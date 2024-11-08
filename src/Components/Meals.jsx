@@ -19,9 +19,8 @@ const Meals = ({mealsData}) => {
 		});
 	}
 	return (
-		<div className="py-8">
+		<div className="px-4 md:px-16 lg:px-32 xl:px-80 py-8">
 			<MyButton text="Что я сегодня ем?" onClick={getRandomMeals} />
-
 			{randomMeals && (
 				<div className="mb-8">
 					<h2 className="text-2xl font-bold mb-4">Ваши блюда на сегодня</h2>
