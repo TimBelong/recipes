@@ -47,3 +47,18 @@ code {
 .search svg path{
   fill: black;
 }
+
+.meal-enter {
+  opacity: 0;
+}
+.meal-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.meal-exit {
+  opacity: 1;
+}
+.meal-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
