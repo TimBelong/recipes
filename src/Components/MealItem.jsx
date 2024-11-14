@@ -5,8 +5,8 @@ const MealItem = ({ meal }) => (
 		<img src={meal.image} alt={meal.name} className="w-full h-96 object-cover rounded mb-4" />
 		<h3 className="text-xl font-semibold">{meal.name}</h3>
 		<ul className="mt-2">
-			{meal.ingredients.map((ingredient, index) => (
-				<li key={index} className="text-sm text-gray-700">- {ingredient}</li>
+			{meal.ingredients.map((ingredient) => (
+				<li key={meal.id} className="text-sm text-gray-700">- {ingredient}</li>
 			))}
 		</ul>
 	</div>

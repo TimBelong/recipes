@@ -1,36 +1,97 @@
-import React, {useState} from 'react';
-import MealItem from "./MealItem";
+import React, { useState } from 'react';
 import MyButton from "../UI/MyButton";
+import CalorieCalculatorForm from './CalorieCalculatorForm';
+import MealList from './MealList';
+import { CSSTransition } from 'react-transition-group';
 
-
-const Meals = ({mealsData}) => {
+const Meals = ({ mealsData }) => {
 	const [randomMeals, setRandomMeals] = useState(null);
-	const getRandomMeals = () => {
-		const getRandomMeal = (meals) => meals[Math.floor(Math.random() * meals.length)];
+	const [gender, setGender] = useState('male');
+	const [formData, setFormData] = useState({
+		weight: '74',
+		age: '30',
+		height: '177',
+		activity: '1.2'
+	});
+	const [error, setError] = useState('');
 
-		const randomBreakfast = getRandomMeal(mealsData.breakfasts);
-		const randomLunch = getRandomMeal(mealsData.lunches);
-		const randomDinner = getRandomMeal(mealsData.dinners);
+	const handleToggle = (selectedGender) => setGender(selectedGender);
+
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+		setFormData(prevData => ({ ...prevData, [name]: value }));
+	};
+
+	const handleActivityChange = (value) => setFormData(prevData => ({ ...prevData, activity: value }));
+
+	const validateForm = () => {
+		const { weight, age, height } = formData;
+		if (!weight || weight <= 0 || !age || age <= 0 || !height || height <= 0) {
+			setError("Пожалуйста, введите корректные данные для веса, роста и возраста.");
+			return false;
+		}
+		setError('');
+		return true;
+	};
+
+	const calculateCalories = () => {
+		const { weight, age, height, activity } = formData;
+		const baseCalories =
+			gender === 'male'
+				? 10 * weight + 6.25 * height - 5 * age + 5
+				: 10 * weight + 6.25 * height - 5 * age - 161;
+		return baseCalories * parseFloat(activity);
+	};
+
+	const getRandomMeals = () => {
+		if (!validateForm()) return;
+
+		const dailyCalories = calculateCalories();
+		let selectedMeals = [];
+		let totalCalories = 0;
+
+		while (totalCalories < dailyCalories) {
+			const randomBreakfast = mealsData.breakfasts[Math.floor(Math.random() * mealsData.breakfasts.length)];
+			const randomLunch = mealsData.lunches[Math.floor(Math.random() * mealsData.lunches.length)];
+			const randomDinner = mealsData.dinners[Math.floor(Math.random() * mealsData.dinners.length)];
+			const meals = [randomBreakfast, randomLunch, randomDinner];
+			const calories = meals.reduce((acc, meal) => acc + (meal?.calories || 0), 0);
+
+			if (calories <= dailyCalories) {
+				selectedMeals = meals;
+				totalCalories = calories;
+				break;
+			}
+		}
 
 		setRandomMeals({
-			breakfast: randomBreakfast,
-			lunch: randomLunch,
-			dinner: randomDinner,
+			breakfast: selectedMeals[0],
+			lunch: selectedMeals[1],
+			dinner: selectedMeals[2],
 		});
-	}
+	};
+
 	return (
-		<div className="px-4 md:px-16 lg:px-32 xl:px-80 py-8">
-			<MyButton text="Что я сегодня ем?" onClick={getRandomMeals} />
-			{randomMeals && (
-				<div className="mb-8">
-					<h2 className="text-2xl font-bold mb-4">Ваши блюда на сегодня</h2>
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-						<MealItem meal={randomMeals.breakfast} />
-						<MealItem meal={randomMeals.lunch} />
-						<MealItem meal={randomMeals.dinner} />
-					</div>
+		<div className="flex flex-col px-4 md:px-16 lg:px-28 xl:px-48 xl:flex-row xl:justify-between py-8">
+			<div
+				className={`calculator-container ${randomMeals ? 'calculator-container-small' : 'calculator-container-full'}`}
+			>
+				<CalorieCalculatorForm
+					formData={formData}
+					gender={gender}
+					error={error}
+					onToggleGender={handleToggle}
+					onInputChange={handleInputChange}
+					onActivityChange={handleActivityChange}
+					calculateCalories={calculateCalories}
+				/>
+				<MyButton text="Что я сегодня ем?" onClick={getRandomMeals}/>
+			</div>
+			<CSSTransition in={!!randomMeals} timeout={500} classNames="meal-list" unmountOnExit>
+				<div>
+					<MealList randomMeals={randomMeals}/>
 				</div>
-			)}
+			</CSSTransition>
 		</div>
 	);
 };

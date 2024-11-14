@@ -2,7 +2,7 @@ import './App.css';
 import Header from "./Components/Header";
 import Meals from "./Components/Meals";
 import mealsData from './data/meals.json';
-import RecipeFinder from "./Components/RecipeFinder";
+// import RecipeFinder from "./Components/RecipeFinder";
 import SearchByName from "./Components/SearchByName";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <SearchByName mealsData={mealsData} />
       <Meals mealsData={mealsData} />
-      <RecipeFinder mealsData={mealsData} />
+      {/*<RecipeFinder mealsData={mealsData} />*/}
     </div>
   );
 }

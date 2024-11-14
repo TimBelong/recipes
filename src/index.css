@@ -60,5 +60,55 @@ code {
 }
 .meal-exit-active {
   opacity: 0;
-  transition: opacity 500ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.calculator-container {
+  transition: width 0.5s ease;
+}
+
+.calculator-container-full {
+  width: 100%;
+}
+
+.calculator-container-small {
+  width: 70%;
+}
+
+.meal-list-enter {
+  opacity: 0;
+}
+
+.meal-list-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.meal-list-exit {
+  opacity: 1;
+}
+
+.meal-list-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+@media(max-width: 1024px){
+  .calculator-container-small{
+     width: 100%;
+  }
+
+  .calculator-container button{
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .header_logo{
+    width: 40px;
+  }
+  .activity-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

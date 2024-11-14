@@ -1,109 +1,71 @@
 {
   "breakfasts": [
     {
+      "id": 1,
       "name": "Омлет c сыром",
-      "ingredients": [
-        "Яйца",
-        "Молоко",
-        "Сыр",
-        "Зелень"
-      ],
-      "image": "https://img1.russianfood.com/dycontent/images_upl/437/big_436562.jpg"
+      "ingredients": ["Яйца", "Молоко", "Сыр", "Зелень"],
+      "image": "https://img1.russianfood.com/dycontent/images_upl/437/big_436562.jpg",
+      "calories": 250
     },
     {
-      "name": "Овсянная каша с бананом",
-      "ingredients": [
-        "Овсянная каша",
-        "Молоко",
-        "Сахар",
-        "Растительное масло",
-        "Банан",
-        "Голубика"
-      ],
-      "image": "https://img1.russianfood.com/dycontent/images_upl/342/big_341098.jpg"
+      "id": 2,
+      "name": "Овсянная каша",
+      "ingredients": ["Овсянная каша", "Молоко", "Сахар", "Растительное масло", "Банан", "Голубика"],
+      "image": "https://img1.russianfood.com/dycontent/images_upl/342/big_341098.jpg",
+      "calories": 320
     },
     {
+      "id": 3,
       "name": "Яичница глазунья",
-      "ingredients": [
-        "Яйца",
-        "Зелень по вкусу",
-        "Овощи"
-      ],
-      "image": "https://static.1000.menu/img/content-v2/a9/dd/52657/yaichnica-glazunya_1611857412_7_max.jpg"
+      "ingredients": ["Яйца", "Зелень по вкусу", "Овощи"],
+      "image": "https://static.1000.menu/img/content-v2/a9/dd/52657/yaichnica-glazunya_1611857412_7_max.jpg",
+      "calories": 180
     },
     {
-      "name": "Брускетта с авакадо и тунцом",
-      "ingredients": [
-        "Хлеб",
-        "Яйца",
-        "Авокадо",
-        "Тунец консервированный"
-      ],
-      "image": "https://img.iamcook.ru/2018/upl/recipes/cat/u-e13c5f9495ff4f350221ccb7b2077475.jpg"
+      "id": 4,
+      "name": "Брускетта с тунцом",
+      "ingredients": ["Хлеб", "Яйца", "Авокадо", "Тунец консервированный"],
+      "image": "https://img.iamcook.ru/2018/upl/recipes/cat/u-e13c5f9495ff4f350221ccb7b2077475.jpg",
+      "calories": 200
     }
   ],
   "lunches": [
     {
+      "id": 5,
       "name": "Карбонара",
-      "ingredients": [
-        "Бекона",
-        "Яйца",
-        "Спагетти",
-        "Пармезан",
-        "Оливковое масло"
-      ],
-      "image": "https://opis-cdn.tinkoffjournal.ru/mercury/carbonara-19.mvotyhplpagn..jpg"
+      "ingredients": ["Бекона", "Яйца", "Спагетти", "Пармезан", "Оливковое масло"],
+      "image": "https://opis-cdn.tinkoffjournal.ru/mercury/carbonara-19.mvotyhplpagn..jpg",
+      "calories": 600
     },
     {
+      "id": 6,
       "name": "Кёфтэ",
-      "ingredients": [
-        "Говяжий фарш",
-        "Картошки",
-        "Помидор",
-        "Красный перец",
-        "Чеснок",
-        "Томатная паста",
-        "Оливковое масло"
-      ],
-      "image": "https://i.ytimg.com/vi/S6flxGP9DyY/maxresdefault.jpg"
+      "ingredients": ["Говяжий фарш", "Картошки", "Помидор", "Красный перец", "Чеснок", "Томатная паста", "Оливковое масло"],
+      "image": "https://i.ytimg.com/vi/S6flxGP9DyY/maxresdefault.jpg",
+      "calories": 450
     },
     {
+      "id": 7,
       "name": "Паста с морепродуктами",
-      "ingredients": [
-        "Пасты",
-        "Креветок",
-        "Мидий",
-        "Чеснок",
-        "Помидор",
-        "Оливковое масло"
-      ],
-      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
+      "ingredients": ["Пасты", "Креветок", "Мидий", "Чеснок", "Помидор", "Оливковое масло"],
+      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg",
+      "calories": 520
     },
     {
+      "id": 8,
       "name": "Курица в сливках",
-      "ingredients": [
-        "Куринное филе",
-        "Лук",
-        "Сливки",
-        "Зубчик чеснока",
-        "Оливковое масло",
-        "Зелень"
-      ],
-      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg"
+      "ingredients": ["Куринное филе", "Лук", "Сливки", "Зубчик чеснока", "Оливковое масло", "Зелень"],
+      "image": "https://www.vkusnyblog.com/wp-content/uploads/2015/07/pasta-s-moreproduktami.jpg",
+      "calories": 400
     }
   ],
   "dinners": [
     {
+      "id": 9,
       "name": "Стейк с овощами",
-      "ingredients": [
-        "Говяжий стейк",
-        "1 болгарский перец",
-        "1 цукини",
-        "1 ст.л. оливкового масла",
-        "соль",
-        "перец"
-      ],
-      "image": "https://steakandgrill.ru/wp-content/uploads/2020/03/1-stejk-s-ovoshami-na-doske-1024x684.jpg"
+      "ingredients": ["Говяжий стейк", "1 болгарский перец", "1 цукини", "1 ст.л. оливкового масла", "соль", "перец"],
+      "image": "https://steakandgrill.ru/wp-content/uploads/2020/03/1-stejk-s-ovoshami-na-doske-1024x684.jpg",
+      "calories": 700
     }
   ]
 }

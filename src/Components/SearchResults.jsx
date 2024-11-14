@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import MealPreview from "./MealPreviewю";
+import MealPreview from "./MealPreview";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const SearchResults = ({ filteredMeals, searchQuery }) => {
@@ -14,13 +14,13 @@ const SearchResults = ({ filteredMeals, searchQuery }) => {
 							nodeRefs.current[index] = nodeRefs.current[index] || React.createRef();
 							return (
 								<CSSTransition
-									key={index}
+									key={meal.id}
 									timeout={500}
 									classNames="meal"
 									nodeRef={nodeRefs.current[index]}
 								>
 									<div ref={nodeRefs.current[index]}>
-										<MealPreview meal={meal} />
+										<MealPreview meal={meal} flexDirection="col" imageHeight="h-24" imageWidth="w-24" text={'text-center'}/>
 									</div>
 								</CSSTransition>
 							);

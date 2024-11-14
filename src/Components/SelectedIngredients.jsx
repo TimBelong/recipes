@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SelectedIngredients = ({ selectedIngredients, setSelectedIngredients }) => (
+
 	<div className="my-10">
 		<h3 className="text-lg font-semibold">Выбранные ингредиенты:</h3>
 		<ul className="flex flex-wrap gap-2 mt-5">

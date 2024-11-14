@@ -71,10 +71,10 @@ const RecipeFinder = ({mealsData}) => {
 	};
 
 	return (
-		<div className="px-4 md:px-16 lg:px-32 xl:px-80 py-8space-y-4">
+		<div className="px-4 md:px-16 lg:px-32 xl:px-80 py-8space-y-4 mt-10">
 			<h2 className="text-2xl font-bold">Найти рецепт по ингредиентам</h2>
 
-			<div className="md:flex md:space-x-10 space-y-6 md:space-y-0">
+			<div className="md:flex md:space-x-10 space-y-6 md:space-y-0 mt-10">
 				<div className="flex-1">
 					<MySelect
 						value={selectedMealType}

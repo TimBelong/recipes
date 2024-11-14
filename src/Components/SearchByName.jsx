@@ -5,7 +5,7 @@ import SearchResults from "./SearchResults";
 
 const SearchByName = ({ mealsData }) => {
 	const [searchQuery, setSearchQuery] = useState('');
-	const [gifilteredMeals, setFilteredMeals] = useState([]);
+	const [filteredMeals, setFilteredMeals] = useState([]);
 
 	const handleSearch = (event) => {
 		const query = event.target.value;
